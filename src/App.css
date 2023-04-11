@@ -1,0 +1,185 @@
+.App {
+  height: 100vh;
+  /* height: -webkit-fill-available; */
+  background-image: url("jungle.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+/* --- Header style --- */
+.header {
+  font-family: "Lucida Handwriting",cursive;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #effff5;
+  justify-content: center;
+
+}
+
+.header h1 {
+  font-size: 64px;
+  background-color: rgba(119, 81, 6, 0.7) ;
+  text-align: center;
+  margin: 0;
+}
+
+.header p {
+  font-size: 2em;
+  text-align: center;
+  background-color: rgba(119, 81, 6, 0.7);
+  margin: 0;
+  font-style: italic;
+}
+
+/* --- Chat Container style --- */
+.chat-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+/* --- Chat Replies style --- */
+.chat {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat a {
+  color: #000000;
+}
+
+.chat-bubble-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-picture {
+  width: 30px;
+  height: 30px;
+}
+
+.profile-picture img {
+  border-radius: 5px;
+}
+
+.chat-bubble {
+  padding: 1em 1em;
+  max-width: 80%;
+  border-style: dotted;
+  border-width: medium;
+}
+
+.user-bubble {
+  border-style: dotted;
+  border-width:  0px medium 0px medium;
+  color: #000000;
+  width: 100%;
+}
+
+.openai-bubble {
+  align-self: flex-start;
+  color: #000000;
+  width: 100%;
+}
+.openai-bubble .type-writer {
+  margin: 0;
+}
+
+/* --- Input Area style --- */
+.input-area {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: rgba(119, 81, 6, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.input-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.input-area input {
+  width: calc(60% - 2em);
+  background-image: linear-gradient(to left,#2d4f19,#e6b522,#547524,#83a12d,#613514,#8f6132);
+  border: none;
+  color: #000000;
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.input-area button {
+     /* width: 10%; */
+  /* padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+background: transparent;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+/* .input-area button {
+  background: transparent;
+      border: 0px;
+      padding: 0px;
+      margin: 0px;
+      font-size: 1em;
+  } */
+
+.input-area i {
+  color: #ffffff;
+  margin: 0.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.radio-button {
+  text-align: center;
+  font-family: "Lucida Handwriting",cursive;
+  margin: 0.5em;
+  background-color: rgba(97, 154, 24, 0.5);
+  font-size: 1.1em;
+  border-width:2px;
+  border-style:solid;
+  border-color:rgb(255, 255, 255);
+  padding-inline: 5px;
+  border-style: outset;
+  /* color:#ffffff; */
+}
+
+.result-image {
+  text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
